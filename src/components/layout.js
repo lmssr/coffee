@@ -12,8 +12,13 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./bootstrap.min.css"
 import "./layout.css"
 
+import Navbar from "./globals/Navbar.js"
+
 const Layout = ({ children }) =>
-  <>{children}</>;
+  <>
+  <Navbar />
+  {children}
+  </>;
 
 
 Layout.propTypes = {
