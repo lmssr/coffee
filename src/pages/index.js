@@ -1,9 +1,9 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import { Link, graphql } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import BackgroundSection from "../components/globals/BackgroundSection"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import BackgroundSection from "../components/globals/BackgroundSection";
 import Info from "../components/home/info";
 import Menu from "../components/home/menu";
 import Products from "../components/home/products";
@@ -25,7 +25,8 @@ const IndexPage = ({data}) => (
 
 export const query = graphql`
 {
-  img: file(relativePath: {eq: "coffee-bg.jpg"}) {
+  img: file(relativePath: { eq: "coffee-bg.jpg" })
+   {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid_tracedSVG
