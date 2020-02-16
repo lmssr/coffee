@@ -3,7 +3,8 @@ import Product from './product';
 import Title from '../globals/title';
 import { StaticQuery, graphql } from "gatsby";
 
-const getProducts = graphql`{
+const getProducts = graphql`
+{
   products: allContentfulCoffeeProduct {
     edges {
       node {
